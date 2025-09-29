@@ -30,7 +30,7 @@ theme.LPI <- function(){
 
 
 # Set the WD ----
-setwd("/Users/Owner/Library/CloudStorage/OneDrive-UniversityofEdinburgh/#00_EM/Project_Soil Microclimate")
+setwd("/Users/Owner/Library/CloudStorage/OneDrive-UniversityofEdinburgh/#00_EM/Project_Soil Microclimate/EM_SoilMicroclimate")
 
 # Import data ----
 soil_all <- read.csv("soil_all.csv")
@@ -46,8 +46,12 @@ soil_all<- soil_all %>%
 
 colnames(soil_all)
 str(soil_all)
-length(soil_all[soil_all$Management == "mound",])
-length(soil_all[soil_all$Management == "No mound", ])
+View(soil_all[soil_all$Management == "mound", ])
+View(soil_all[soil_all$Management == "No mound", ])
+nrow(soil_all[as.character(soil_all$Management) == "mound", ])
+nrow(soil_all[as.character(soil_all$Management) == "No mound", ])
+
+### mound = 13, No mound = 12. 
 
 ### Distance vs O Horizon depth (cm)
 p8 <- ggbarplot(
@@ -85,39 +89,64 @@ combined_plot <- ggarrange(
 )
 print(combined_plot)
 
-### Calculating SEs
+dev.off()
+
+### Calculating SEs ----
 #### calculating the standard error of depth. <MOUND> 
 mound <- soil_all[soil_all$Management == "mound", ]
 mound$count <- row_number(mound)
-View(mound)
+nrow(mound)
 
 sd_depth_mound_0.5 = sd(mound$Depth_cm[mound$Distance == 0.5])
 se_depth_mound_0.5 <- sd_depth_mound_0.5/sqrt(13)
 print(se_depth_mound_0.5)
-# 2.321145 cm for 0.5 m 
+# 2.32 cm for 0.5 m 
 
 sd_depth_mound_7.0 = sd(mound$Depth_cm[mound$Distance == 7.0])
 se_depth_mound_7.0 <- sd_depth_mound_7.0/sqrt(13)
 print(se_depth_mound_7.0)
-# 3.490801 cm for 7.0 m
+# 3.49 cm for 7.0 m
 
 #### calculating the standard error of moisture. <MOUND> 
 sd_moisutre_mound_0.5 = sd(mound$Moisture_vv[mound$Distance == 0.5])
 sd_moisutre_mound_0.5
 se_moisture_mound_0.5 <- sd_moisutre_mound_0.5/sqrt(13)
 print(se_moisture_mound_0.5)
-# 8.409505 cm for 0.5 m 
+# 7.38 % for 0.5 m 
 
 sd_moisutre_mound_7.0 = sd(mound$Moisture_vv[mound$Distance == 7.0])
 se_moisutre_mound_7.0 <- sd_moisutre_mound_7.0/sqrt(13)
 print(se_moisutre_mound_7.0)
-# 7.245946 cm for 7.0 m
+# 6.36 % for 7.0 m
 
 #### calculating the standard error of depth. <NO MOUND> 
+no_mound <- soil_all[soil_all$Management == "No mound", ]
+nrow(no_mound)
 
-### calculating the standard error of moisture. <NO MOUND>
+sd_depth_nomound_0.5 = sd(no_mound$Depth_cm[no_mound$Distance == 0.5])
+se_depth_nomound_0.5 <- sd_depth_nomound_0.5/sqrt(12)
+print(se_depth_nomound_0.5)
+# 2.38 cm for 0.5 m 
 
-## B) ANOVA 
+sd_depth_nomound_7.0 = sd(no_mound$Depth_cm[no_mound$Distance == 7.0])
+se_depth_nomound_7.0 <- sd_depth_nomound_7.0/sqrt(12)
+print(se_depth_nomound_7.0)
+# 3.69 cm for 0.5 m 
+
+#### calculating the standard error of moisture. <NO MOUND>
+sd_moisutre_nomound_0.5 = sd(no_mound$Moisture_vv[no_mound$Distance == 0.5])
+se_moisutre_nomound_0.5 <- sd_moisutre_nomound_0.5/sqrt(12)
+print(se_moisutre_nomound_0.5)
+# 6.61 % for 0.5 m
+
+sd_moisutre_nomound_7.0 = sd(no_mound$Moisture_vv[no_mound$Distance == 7.0])
+se_moisutre_nomound_7.0 <- sd_moisutre_nomound_7.0/sqrt(12)
+print(se_moisutre_nomound_7.0)
+# 5.60 % for 7.0 m
+
+## B) Two-way ANOVA
+#### Depth vs. management & tree trunk distance 
+mod <- aov(Depth_cm ~ Distance * Management, data = )
 depth_lm = lm(Depth_cm ~ Distance, data = mound)
 depth_anov = aov(depth_lm, data = soil_birch)
 summary(depth_anov)
