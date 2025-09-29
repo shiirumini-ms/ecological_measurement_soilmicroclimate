@@ -9,8 +9,8 @@ library(ggplot2) #visualisation
 library(readr) #manipulation
 library(ggpubr)
 install.packages("colourpicker")
-
-# Defining functions ----
+library(car)
+# Definicar# Defining functions ----
 theme.LPI <- function(){
   theme_bw()+
     theme(axis.text.x=element_text(size=12, angle=0, vjust=1, hjust=1, color="black"), 
@@ -146,30 +146,56 @@ print(se_moisutre_nomound_7.0)
 
 ## B) Two-way ANOVA
 #### Depth vs. management & tree trunk distance 
-mod <- aov(Depth_cm ~ Distance * Management, data = )
-depth_lm = lm(Depth_cm ~ Distance, data = mound)
-depth_anov = aov(depth_lm, data = soil_birch)
-summary(depth_anov)
+mod <- aov(Depth_cm ~ Distance * Management, data = soil_all)
+Anova(mod, type = 3)
+summary(mod)
+# Significant for distance
+# Non-significant for management
+# Non-significant interaction: management difference does NOT make a difference to 
+# the effect of distance
 
-tapply(soil_birch$Depth_cm, soil_birch$Distance, mean, na.rm=TRUE)
-# No significant relation, p = 0.928. 
-# Mean 0.5 m: 14.54706 cm, 0.7 m: 18.02941 
+# just test 
+test <- aov(Depth_cm ~ Distance, data = mound)
+test2 <- aov(Depth_cm ~ Distance, data = no_mound)
+summary(test)
+summary(test2)
 
-plot(depth_lm) 
+# two-way anova: p = 0.4758, df = 46. 
+# p = 0.05 for mound, p = 0.34 for no-mound.
+# df = 24, and df = 22, respectively. 
+
+tapply(mound$Depth_cm, mound$Distance, mean, na.rm=TRUE)
+tapply(no_mound$Depth_cm, no_mound$Distance, mean, na.rm=TRUE)
+# mound: Mean 0.5 m: 15.18 cm, 7.0 m: 23.8 cm  
+# no_mound: Mean 0.5 m: 13.93 cm, 7.0 m: 18.2 cm 
+
+
+plot(mod) 
 # Residuals vs. fitted: linearity met. 
 # Q-Q plot generally follows the same line, residuals normally distributed. 
 # Residuals variances are equal. 
 # No significant outliers outside the Cook's distance. 
 
-moisture_lm <- lm(Moisture_vv ~ Distance, data = soil_birch)
-moisture_anov <- aov(moisture_lm)
-summary(moisture_anov)
+#### Moisture vs. Depth and management 
+mod2 <- aov(Moisture_vv ~ Distance * Management, data = soil_all)
+Anova(mod2, type = 3)
+summary(mod2)
 
-tapply(soil_birch$Moisture_vv, soil_birch$Distance, mean, na.rm=TRUE)
-# No significant relation, p = 0.822. 
-# Mean 0.5 m: 49.35882%, 0.7 m: 61.09412%
+test3 <- aov(Moisture_vv ~ Distance, data = no_mound)
+summary(test3)
+test4 <- aov(Moisture_vv ~ Distance, data = mound)
+summary(test4)
 
-plot(moisture_lm)
+# two-way anova: p = 0.60, df = 46. 
+# p = 0.04 for no-mound, p = 0.22 for mound. 
+# df = 22 and df = 24 respectively.
+
+tapply(no_mound$Moisture_vv, no_mound$Distance, mean, na.rm=TRUE)
+tapply(mound$Moisture_vv, mound$Distance, mean, na.rm=TRUE)
+# None Mean 0.5 m: 46.2%, 0.7 m: 65.3%
+# Mound Mean 0.5 m: 52.3%, 7.0 m: 64.6%
+
+plot(mod2)
 # Linearity met.
 # Q-Q plot generally follows the same line. 
 # Residual variances are generally equal.
