@@ -384,11 +384,12 @@ summary(mod)
 # organic layer depth, but this lacks sample size and violates balanced sample size. 
 # therefore, not valid.
 
-### Bring betula at the top so I can talk about betula first. 
 ### Colour scheme: Sorbus should be red, betula to be silver, and alnus to be green.
 ### If you can, bring the total species at the beginning. 
-### Do the same for soil moisture. 
-### Same colour scheme supported. I think presenting n number at the top would be good.
-### Do TWO-Way ANOVA, but be careful on reporting. 
+### The se and means to be calculated.
+### What does this imply? I think I can talk about 
+### alder hypotheses, and talk through how soil moisture also might be 
+### related to this. Although small sample size means that there is no
+### guaranteed conclusion that we can draw from this. 
 
 # 8. Reporting 
