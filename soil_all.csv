@@ -1,63 +1,63 @@
-"","X.5","X.4","X.3","X.2","X.1","X","Date","TreeID","Species","DBH_cm","Cardinal","Depth_cm","Moisture_vv","Distance","Notes","x","y","running_order","Genus"
-"1",1,1,1,1,1,1,"04/09/2025 09:29",1,"Alder",3.7,"North",13,17.6,0.5,"Moss present and heather surrounding near by.
+"","X.6","X.5","X.4","X.3","X.2","X.1","X","Date","TreeID","Species","DBH_cm","Cardinal","Depth_cm","Moisture_vv","Distance","Notes","x","y","running_order","Genus"
+"1",1,1,1,1,1,1,1,"04/09/2025 09:29",1,"Alder",3.7,"North",13,17.6,0.5,"Moss present and heather surrounding near by.
 North was chosen randomly for first direction.",-4.263475019,56.51057638,1,"Alnus"
-"2",2,2,2,2,2,2,"04/09/2025 09:29",1,"Alder",3.7,"North",17.5,77.6,7,"Moss present and heather surrounding near by.
+"2",2,2,2,2,2,2,2,"04/09/2025 09:29",1,"Alder",3.7,"North",17.5,77.6,7,"Moss present and heather surrounding near by.
 North was chosen randomly for first direction.",-4.263475019,56.51057638,2,"Alnus"
-"3",3,3,3,3,3,3,"04/09/2025 09:37",2,"Silver Birch (Betula pendula)",26,"East",13,48.9,0.5,"Near heath with 3m.
+"3",3,3,3,3,3,3,3,"04/09/2025 09:37",2,"Silver Birch (Betula pendula)",26,"East",13,48.9,0.5,"Near heath with 3m.
 Blueberry and heath near tree.",-4.263689516,56.51061822,3,"Betula"
-"4",4,4,4,4,4,4,"04/09/2025 09:37",2,"Silver Birch (Betula pendula)",26,"East",32.5,70.2,7,"Near heath with 3m.
+"4",4,4,4,4,4,4,4,"04/09/2025 09:37",2,"Silver Birch (Betula pendula)",26,"East",32.5,70.2,7,"Near heath with 3m.
 Blueberry and heath near tree.",-4.263689516,56.51061822,4,"Betula"
-"5",5,5,5,5,5,5,"04/09/2025 09:53",3,"Alder",22.6,"West",9,88.4,0.5,"Mixed vegetation lots of reeds and grass, right next to the stream.",-4.263706005,56.51080336,5,"Alnus"
-"6",6,6,6,6,6,6,"04/09/2025 09:53",3,"Alder",22.6,"West",37,81.6,7,"Mixed vegetation lots of reeds and grass, right next to the stream.",-4.263706005,56.51080336,6,"Alnus"
-"7",7,7,7,7,7,7,"04/09/2025 10:01",4,"Downy Birch (Betula pubescens)",9.6,"North",5,48.6,0.5,"Not a breast height for DBH because it is not mature",-4.264062934,56.5109589,7,"Betula"
-"8",8,8,8,8,8,8,"04/09/2025 10:01",4,"Downy Birch (Betula pubescens)",9.6,"North",36.5,89.7,7,"Not a breast height for DBH because it is not mature",-4.264062934,56.5109589,8,"Betula"
-"9",9,9,9,9,9,9,"04/09/2025 10:07",5,"Downy Birch (Betula pubescens)",4.9,"East",18.5,36.8,0.5,"Very immature tree, lots of moss and lichen as well but not the dominate.
+"5",5,5,5,5,5,5,5,"04/09/2025 09:53",3,"Alder",22.6,"West",9,88.4,0.5,"Mixed vegetation lots of reeds and grass, right next to the stream.",-4.263706005,56.51080336,5,"Alnus"
+"6",6,6,6,6,6,6,6,"04/09/2025 09:53",3,"Alder",22.6,"West",37,81.6,7,"Mixed vegetation lots of reeds and grass, right next to the stream.",-4.263706005,56.51080336,6,"Alnus"
+"7",7,7,7,7,7,7,7,"04/09/2025 10:01",4,"Downy Birch (Betula pubescens)",9.6,"North",5,48.6,0.5,"Not a breast height for DBH because it is not mature",-4.264062934,56.5109589,7,"Betula"
+"8",8,8,8,8,8,8,8,"04/09/2025 10:01",4,"Downy Birch (Betula pubescens)",9.6,"North",36.5,89.7,7,"Not a breast height for DBH because it is not mature",-4.264062934,56.5109589,8,"Betula"
+"9",9,9,9,9,9,9,9,"04/09/2025 10:07",5,"Downy Birch (Betula pubescens)",4.9,"East",18.5,36.8,0.5,"Very immature tree, lots of moss and lichen as well but not the dominate.
 ",-4.264143837,56.51113608,9,"Betula"
-"10",10,10,10,10,10,10,"04/09/2025 10:07",5,"Downy Birch (Betula pubescens)",4.9,"East",3.7,69.9,7,"Very immature tree, lots of moss and lichen as well but not the dominate.
+"10",10,10,10,10,10,10,10,"04/09/2025 10:07",5,"Downy Birch (Betula pubescens)",4.9,"East",3.7,69.9,7,"Very immature tree, lots of moss and lichen as well but not the dominate.
 ",-4.264143837,56.51113608,10,"Betula"
-"11",11,11,11,11,11,11,"04/09/2025 10:15",6,"Silver Birch (Betula pendula)",9.6,"South",25,41.7,0.5,"Mixed in with some moss, near some saplings within 7 m. ",-4.264439475,56.51106653,11,"Betula"
-"12",12,12,12,12,12,12,"04/09/2025 10:15",6,"Silver Birch (Betula pendula)",9.6,"South",9,33.1,7,"Mixed in with some moss, near some saplings within 7 m. ",-4.264439475,56.51106653,12,"Betula"
-"13",13,13,13,13,13,13,"04/09/2025 10:26",7,"Silver Birch (Betula pendula)",9.5,"West",32.5,24,0.5,"Some saplings, scattered moss
+"11",11,11,11,11,11,11,11,"04/09/2025 10:15",6,"Silver Birch (Betula pendula)",9.6,"South",25,41.7,0.5,"Mixed in with some moss, near some saplings within 7 m. ",-4.264439475,56.51106653,11,"Betula"
+"12",12,12,12,12,12,12,12,"04/09/2025 10:15",6,"Silver Birch (Betula pendula)",9.6,"South",9,33.1,7,"Mixed in with some moss, near some saplings within 7 m. ",-4.264439475,56.51106653,12,"Betula"
+"13",13,13,13,13,13,13,13,"04/09/2025 10:26",7,"Silver Birch (Betula pendula)",9.5,"West",32.5,24,0.5,"Some saplings, scattered moss
 ",-4.264736515,56.51103724,13,"Betula"
-"14",14,14,14,14,14,14,"04/09/2025 10:26",7,"Silver Birch (Betula pendula)",9.5,"West",11,38.8,7,"Some saplings, scattered moss
+"14",14,14,14,14,14,14,14,"04/09/2025 10:26",7,"Silver Birch (Betula pendula)",9.5,"West",11,38.8,7,"Some saplings, scattered moss
 ",-4.264736515,56.51103724,14,"Betula"
-"15",15,15,15,15,15,15,"04/09/2025 10:56",8,"Scots pine (Pinus sylvestris)",5.6,"North",34,46,0.5,"Young tree, lots of moss. Quite near some other saplings. Side note: Actual Corer depth 52 cm, and the probe 90 cm. And 52 established as maximum",-4.26431905,56.50963164,15,"Pinus"
-"16",16,16,16,16,16,16,"04/09/2025 10:56",8,"Scots pine (Pinus sylvestris)",5.6,"North",52,36.7,7,"Young tree, lots of moss. Quite near some other saplings. Side note: Actual Corer depth 52 cm, and the probe 90 cm. And 52 established as maximum",-4.26431905,56.50963164,16,"Pinus"
-"17",17,17,17,17,17,17,"04/09/2025 11:09",9,"Silver Birch (Betula pendula)",6.1,"South",23,90.9,0.5,"Few saplings around, some difficulty with probe in determining depth at this point as well as some off measurements with soil moisture which showed very low readings on clearly wet soil
+"15",15,15,15,15,15,15,15,"04/09/2025 10:56",8,"Scots pine (Pinus sylvestris)",5.6,"North",34,46,0.5,"Young tree, lots of moss. Quite near some other saplings. Side note: Actual Corer depth 52 cm, and the probe 90 cm. And 52 established as maximum",-4.26431905,56.50963164,15,"Pinus"
+"16",16,16,16,16,16,16,16,"04/09/2025 10:56",8,"Scots pine (Pinus sylvestris)",5.6,"North",52,36.7,7,"Young tree, lots of moss. Quite near some other saplings. Side note: Actual Corer depth 52 cm, and the probe 90 cm. And 52 established as maximum",-4.26431905,56.50963164,16,"Pinus"
+"17",17,17,17,17,17,17,17,"04/09/2025 11:09",9,"Silver Birch (Betula pendula)",6.1,"South",23,90.9,0.5,"Few saplings around, some difficulty with probe in determining depth at this point as well as some off measurements with soil moisture which showed very low readings on clearly wet soil
 ",-4.263928479,56.50963111,17,"Betula"
-"18",18,18,18,18,18,18,"04/09/2025 11:09",9,"Silver Birch (Betula pendula)",6.1,"South",34.5,79.9,7,"Few saplings around, some difficulty with probe in determining depth at this point as well as some off measurements with soil moisture which showed very low readings on clearly wet soil
+"18",18,18,18,18,18,18,18,"04/09/2025 11:09",9,"Silver Birch (Betula pendula)",6.1,"South",34.5,79.9,7,"Few saplings around, some difficulty with probe in determining depth at this point as well as some off measurements with soil moisture which showed very low readings on clearly wet soil
 ",-4.263928479,56.50963111,18,"Betula"
-"19",19,19,19,19,19,19,"04/09/2025 11:24",10,"Silver Birch (Betula pendula)",6,"East",15.8,40.4,0.5,"Lots of grass and moss. Very mossy under tree probe shows shallow",-4.263954048,56.5094955,19,"Betula"
-"20",20,20,20,20,20,20,"04/09/2025 11:24",10,"Silver Birch (Betula pendula)",6,"East",18,74.9,7,"Lots of grass and moss. Very mossy under tree probe shows shallow",-4.263954048,56.5094955,20,"Betula"
-"21",21,21,21,21,21,21,"04/09/2025 12:06",11,"Silver Birch (Betula pendula)",9.7,"West",10,53.6,0.5,"Deep water out near by fenced off. DBH is on a non mature tree. Top of a hill",-4.264174009,56.50927329,21,"Betula"
-"22",22,22,22,22,22,22,"04/09/2025 12:06",11,"Silver Birch (Betula pendula)",9.7,"West",11,56.5,7,"Deep water out near by fenced off. DBH is on a non mature tree. Top of a hill",-4.264174009,56.50927329,22,"Betula"
-"23",23,23,23,23,23,23,"04/09/2025 12:20",12,"Silver Birch (Betula pendula)",3.4,"North",6.5,87.4,0.5,"Area has lots of holes filled with water maybe . 5 meters deep ranging.
+"19",19,19,19,19,19,19,19,"04/09/2025 11:24",10,"Silver Birch (Betula pendula)",6,"East",15.8,40.4,0.5,"Lots of grass and moss. Very mossy under tree probe shows shallow",-4.263954048,56.5094955,19,"Betula"
+"20",20,20,20,20,20,20,20,"04/09/2025 11:24",10,"Silver Birch (Betula pendula)",6,"East",18,74.9,7,"Lots of grass and moss. Very mossy under tree probe shows shallow",-4.263954048,56.5094955,20,"Betula"
+"21",21,21,21,21,21,21,21,"04/09/2025 12:06",11,"Silver Birch (Betula pendula)",9.7,"West",10,53.6,0.5,"Deep water out near by fenced off. DBH is on a non mature tree. Top of a hill",-4.264174009,56.50927329,21,"Betula"
+"22",22,22,22,22,22,22,22,"04/09/2025 12:06",11,"Silver Birch (Betula pendula)",9.7,"West",11,56.5,7,"Deep water out near by fenced off. DBH is on a non mature tree. Top of a hill",-4.264174009,56.50927329,22,"Betula"
+"23",23,23,23,23,23,23,23,"04/09/2025 12:20",12,"Silver Birch (Betula pendula)",3.4,"North",6.5,87.4,0.5,"Area has lots of holes filled with water maybe . 5 meters deep ranging.
 Dbh not taken at 1.3 m cause it was very immature.",-4.264550946,56.50885488,23,"Betula"
-"24",24,24,24,24,24,24,"04/09/2025 12:20",12,"Silver Birch (Betula pendula)",3.4,"North",20,71.4,7,"Area has lots of holes filled with water maybe . 5 meters deep ranging.
+"24",24,24,24,24,24,24,24,"04/09/2025 12:20",12,"Silver Birch (Betula pendula)",3.4,"North",20,71.4,7,"Area has lots of holes filled with water maybe . 5 meters deep ranging.
 Dbh not taken at 1.3 m cause it was very immature.",-4.264550946,56.50885488,24,"Betula"
-"25",25,25,25,25,25,25,"04/09/2025 12:27",13,"Downy Birch (Betula pubescens)",5.1,"East",3.5,41.4,0.5,"We see next to a small creek, marsh next to us south. ",-4.26461226,56.50861166,25,"Betula"
-"26",26,26,26,26,26,26,"04/09/2025 12:27",13,"Downy Birch (Betula pubescens)",5.1,"East",30,40.8,7,"We see next to a small creek, marsh next to us south. ",-4.26461226,56.50861166,26,"Betula"
-"27",27,27,27,27,27,27,"04/09/2025 12:34",14,"Rowan (Sorbus aucuparia)",6.5,"South",13.5,44.8,0.5," Almost exactly half Heather half mass and it’s about 1 m or less away from a small babbling Brook          ",-4.264384764,56.50856871,27,"Sorbus"
-"28",28,28,28,28,28,28,"04/09/2025 12:34",14,"Rowan (Sorbus aucuparia)",6.5,"South",41,90.4,7," Almost exactly half Heather half mass and it’s about 1 m or less away from a small babbling Brook          ",-4.264384764,56.50856871,28,"Sorbus"
-"29",29,29,29,29,29,29,"04/09/2025 12:43",15,"Downy Birch (Betula pubescens)",7,"West",13,19.5,0.5,"Quite near a creek.",-4.264145551,56.50833795,29,"Betula"
-"30",30,30,30,30,30,30,"04/09/2025 12:43",15,"Downy Birch (Betula pubescens)",7,"West",12.5,78.1,7,"Quite near a creek.",-4.264145551,56.50833795,30,"Betula"
-"31",31,31,31,31,31,31,"04/09/2025 12:48",16,"Silver Birch (Betula pendula)",7.8,"North",18.5,28.9,0.5,"Crossed a creek in transect and it just started raining.",-4.264207333,56.50817063,31,"Betula"
-"32",32,32,32,32,32,32,"04/09/2025 12:48",16,"Silver Birch (Betula pendula)",7.8,"North",9.5,34.2,7,"Crossed a creek in transect and it just started raining.",-4.264207333,56.50817063,32,"Betula"
-"33",33,33,33,33,33,33,"04/09/2025 12:53",17,"Alder",3.2,"East",8,24.5,0.5,"We are in a creek bed potentially but not actively running. The measurement near the tree was on a rock.",-4.264153666,56.50820698,33,"Alnus"
-"34",34,34,34,34,34,34,"04/09/2025 12:53",17,"Alder",3.2,"East",20,90.8,7,"We are in a creek bed potentially but not actively running. The measurement near the tree was on a rock.",-4.264153666,56.50820698,34,"Alnus"
-"35",35,35,35,35,35,35,"04/09/2025 13:03",18,"Silver Birch (Betula pendula)",7.9,"South",25.5,82.6,0.5,"Lots of deep water pits all around.",-4.264559938,56.5077742,35,"Betula"
-"36",36,36,36,36,36,36,"04/09/2025 13:03",18,"Silver Birch (Betula pendula)",7.9,"South",21.5,27.4,7,"Lots of deep water pits all around.",-4.264559938,56.5077742,36,"Betula"
-"37",37,37,37,37,37,37,"04/09/2025 13:09",19,"Silver Birch (Betula pendula)",9.4,"West",13,91.6,0.5,"Pine quite near to sample point 7 m off. ",-4.264418179,56.50747257,37,"Betula"
-"38",38,38,38,38,38,38,"04/09/2025 13:09",19,"Silver Birch (Betula pendula)",9.4,"West",14.3,89.9,7,"Pine quite near to sample point 7 m off. ",-4.264418179,56.50747257,38,"Betula"
-"39",39,39,39,39,39,39,"04/09/2025 13:20",20,"Downy Birch (Betula pubescens)",5.9,"West",13,28.9,0.5,"Lots of heather as well",-4.264714029,56.5071932,39,"Betula"
-"40",40,40,40,40,40,40,"04/09/2025 13:20",20,"Downy Birch (Betula pubescens)",5.9,"West",25.5,69.2,7,"Lots of heather as well",-4.264714029,56.5071932,40,"Betula"
-"41",41,41,41,41,41,41,"04/09/2025 13:54",21,"Alder",4.5,"West",9.7,57.8,0.5,"Down stream of a creek and boggy",-4.263589078,56.51006712,41,"Alnus"
-"42",42,42,42,42,42,42,"04/09/2025 13:54",21,"Alder",4.5,"West",33.5,78.8,7,"Down stream of a creek and boggy",-4.263589078,56.51006712,42,"Alnus"
-"43",43,43,43,43,43,43,"04/09/2025 14:01",22,"Rowan (Sorbus aucuparia)",10.2,"East",15.5,28.1,0.5,"Moss with heather patches next to a river",-4.262813129,56.51012697,43,"Sorbus"
-"44",44,44,44,44,44,44,"04/09/2025 14:01",22,"Rowan (Sorbus aucuparia)",10.2,"East",8.5,68.7,7,"Moss with heather patches next to a river",-4.262813129,56.51012697,44,"Sorbus"
-"45",45,45,45,45,45,45,"04/09/2025 14:05",23,"Rowan (Sorbus aucuparia)",3.9,"East",14.5,88.4,0.5,"Heather patches all over, next to river ",-4.262831112,56.51005494,45,"Sorbus"
-"46",46,46,46,46,46,46,"04/09/2025 14:05",23,"Rowan (Sorbus aucuparia)",3.9,"East",12.5,61.6,7,"Heather patches all over, next to river ",-4.262831112,56.51005494,46,"Sorbus"
-"47",47,47,47,47,47,47,"04/09/2025 14:10",24,"Silver Birch (Betula pendula)",7.4,"East",6,45.1,0.5,"Bad terrain on a slope so went east ",-4.262562302,56.51001895,47,"Betula"
-"48",48,48,48,48,48,48,"04/09/2025 14:10",24,"Silver Birch (Betula pendula)",7.4,"East",7,34.8,7,"Bad terrain on a slope so went east ",-4.262562302,56.51001895,48,"Betula"
-"49",49,49,49,49,49,49,"04/09/2025 14:13",25,"Silver Birch (Betula pendula)",7,"West",5.5,28.8,0.5,"Along river bank on top of a steep slope",-4.262435725,56.510013,49,"Betula"
-"50",50,50,50,50,50,50,"04/09/2025 14:13",25,"Silver Birch (Betula pendula)",7,"West",10,79.8,7,"Along river bank on top of a steep slope",-4.262435725,56.510013,50,"Betula"
+"25",25,25,25,25,25,25,25,"04/09/2025 12:27",13,"Downy Birch (Betula pubescens)",5.1,"East",3.5,41.4,0.5,"We see next to a small creek, marsh next to us south. ",-4.26461226,56.50861166,25,"Betula"
+"26",26,26,26,26,26,26,26,"04/09/2025 12:27",13,"Downy Birch (Betula pubescens)",5.1,"East",30,40.8,7,"We see next to a small creek, marsh next to us south. ",-4.26461226,56.50861166,26,"Betula"
+"27",27,27,27,27,27,27,27,"04/09/2025 12:34",14,"Rowan (Sorbus aucuparia)",6.5,"South",13.5,44.8,0.5," Almost exactly half Heather half mass and it’s about 1 m or less away from a small babbling Brook          ",-4.264384764,56.50856871,27,"Sorbus"
+"28",28,28,28,28,28,28,28,"04/09/2025 12:34",14,"Rowan (Sorbus aucuparia)",6.5,"South",41,90.4,7," Almost exactly half Heather half mass and it’s about 1 m or less away from a small babbling Brook          ",-4.264384764,56.50856871,28,"Sorbus"
+"29",29,29,29,29,29,29,29,"04/09/2025 12:43",15,"Downy Birch (Betula pubescens)",7,"West",13,19.5,0.5,"Quite near a creek.",-4.264145551,56.50833795,29,"Betula"
+"30",30,30,30,30,30,30,30,"04/09/2025 12:43",15,"Downy Birch (Betula pubescens)",7,"West",12.5,78.1,7,"Quite near a creek.",-4.264145551,56.50833795,30,"Betula"
+"31",31,31,31,31,31,31,31,"04/09/2025 12:48",16,"Silver Birch (Betula pendula)",7.8,"North",18.5,28.9,0.5,"Crossed a creek in transect and it just started raining.",-4.264207333,56.50817063,31,"Betula"
+"32",32,32,32,32,32,32,32,"04/09/2025 12:48",16,"Silver Birch (Betula pendula)",7.8,"North",9.5,34.2,7,"Crossed a creek in transect and it just started raining.",-4.264207333,56.50817063,32,"Betula"
+"33",33,33,33,33,33,33,33,"04/09/2025 12:53",17,"Alder",3.2,"East",8,24.5,0.5,"We are in a creek bed potentially but not actively running. The measurement near the tree was on a rock.",-4.264153666,56.50820698,33,"Alnus"
+"34",34,34,34,34,34,34,34,"04/09/2025 12:53",17,"Alder",3.2,"East",20,90.8,7,"We are in a creek bed potentially but not actively running. The measurement near the tree was on a rock.",-4.264153666,56.50820698,34,"Alnus"
+"35",35,35,35,35,35,35,35,"04/09/2025 13:03",18,"Silver Birch (Betula pendula)",7.9,"South",25.5,82.6,0.5,"Lots of deep water pits all around.",-4.264559938,56.5077742,35,"Betula"
+"36",36,36,36,36,36,36,36,"04/09/2025 13:03",18,"Silver Birch (Betula pendula)",7.9,"South",21.5,27.4,7,"Lots of deep water pits all around.",-4.264559938,56.5077742,36,"Betula"
+"37",37,37,37,37,37,37,37,"04/09/2025 13:09",19,"Silver Birch (Betula pendula)",9.4,"West",13,91.6,0.5,"Pine quite near to sample point 7 m off. ",-4.264418179,56.50747257,37,"Betula"
+"38",38,38,38,38,38,38,38,"04/09/2025 13:09",19,"Silver Birch (Betula pendula)",9.4,"West",14.3,89.9,7,"Pine quite near to sample point 7 m off. ",-4.264418179,56.50747257,38,"Betula"
+"39",39,39,39,39,39,39,39,"04/09/2025 13:20",20,"Downy Birch (Betula pubescens)",5.9,"West",13,28.9,0.5,"Lots of heather as well",-4.264714029,56.5071932,39,"Betula"
+"40",40,40,40,40,40,40,40,"04/09/2025 13:20",20,"Downy Birch (Betula pubescens)",5.9,"West",25.5,69.2,7,"Lots of heather as well",-4.264714029,56.5071932,40,"Betula"
+"41",41,41,41,41,41,41,41,"04/09/2025 13:54",21,"Alder",4.5,"West",9.7,57.8,0.5,"Down stream of a creek and boggy",-4.263589078,56.51006712,41,"Alnus"
+"42",42,42,42,42,42,42,42,"04/09/2025 13:54",21,"Alder",4.5,"West",33.5,78.8,7,"Down stream of a creek and boggy",-4.263589078,56.51006712,42,"Alnus"
+"43",43,43,43,43,43,43,43,"04/09/2025 14:01",22,"Rowan (Sorbus aucuparia)",10.2,"East",15.5,28.1,0.5,"Moss with heather patches next to a river",-4.262813129,56.51012697,43,"Sorbus"
+"44",44,44,44,44,44,44,44,"04/09/2025 14:01",22,"Rowan (Sorbus aucuparia)",10.2,"East",8.5,68.7,7,"Moss with heather patches next to a river",-4.262813129,56.51012697,44,"Sorbus"
+"45",45,45,45,45,45,45,45,"04/09/2025 14:05",23,"Rowan (Sorbus aucuparia)",3.9,"East",14.5,88.4,0.5,"Heather patches all over, next to river ",-4.262831112,56.51005494,45,"Sorbus"
+"46",46,46,46,46,46,46,46,"04/09/2025 14:05",23,"Rowan (Sorbus aucuparia)",3.9,"East",12.5,61.6,7,"Heather patches all over, next to river ",-4.262831112,56.51005494,46,"Sorbus"
+"47",47,47,47,47,47,47,47,"04/09/2025 14:10",24,"Silver Birch (Betula pendula)",7.4,"East",6,45.1,0.5,"Bad terrain on a slope so went east ",-4.262562302,56.51001895,47,"Betula"
+"48",48,48,48,48,48,48,48,"04/09/2025 14:10",24,"Silver Birch (Betula pendula)",7.4,"East",7,34.8,7,"Bad terrain on a slope so went east ",-4.262562302,56.51001895,48,"Betula"
+"49",49,49,49,49,49,49,49,"04/09/2025 14:13",25,"Silver Birch (Betula pendula)",7,"West",5.5,28.8,0.5,"Along river bank on top of a steep slope",-4.262435725,56.510013,49,"Betula"
+"50",50,50,50,50,50,50,50,"04/09/2025 14:13",25,"Silver Birch (Betula pendula)",7,"West",10,79.8,7,"Along river bank on top of a steep slope",-4.262435725,56.510013,50,"Betula"

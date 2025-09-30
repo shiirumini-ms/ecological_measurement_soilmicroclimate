@@ -54,6 +54,10 @@ soil_all <- soil_all %>%
 unique(soil_all$Genus)
 
 write.csv(soil_all, "soil_all.csv")
+soil_all <- soil_all %>% 
+  dplyr::select("Date", "TreeID","Species","DBH_cm","Cardinal",
+         "Depth_cm","Moisture_vv","Distance",      
+         "Notes","x","y","running_order","Genus")
 View(soil_all)
 
 # 2. ALL TREES (skipped, refer to the Soil_microclimate_2025EM.R) ----
@@ -320,7 +324,6 @@ p7 <- ggbarplot(
 
 p7
 
-
 p10 <- ggbarplot(
   soil_all_nonpine, x = "Distance", y = "Moisture_vv", 
   add = c("mean_se", "jitter"), 
@@ -384,6 +387,117 @@ summary(mod)
 # organic layer depth, but this lacks sample size and violates balanced sample size. 
 # therefore, not valid.
 
+
+
+# 8. Species-specific AND Total species: Barplot ----
+## combining rows with Genus = Total
+datavis <- soil_all_nonpine
+datavis <- soil_all_nonpine %>% 
+  mutate(Genus = "Total")
+datavis <- bind_rows(
+  soil_all_nonpine, datavis
+)
+str(datavis)
+
+datavis$Genus <- factor(datavis$Genus, levels = c("Total", "Alnus", "Betula", "Sorbus"))
+
+p11 <- ggbarplot(
+  datavis, x = "Distance", y = "Depth_cm", 
+  add = c("mean_se", "jitter"), 
+  add.params = list(shape = "Genus"),
+  fill= "Genus", palette = c(
+    "Total" = "#8B4513",
+    "Alnus" = "#E0EEEE", 
+    "Betula" = "#C1CDCD", 
+    "Sorbus" = "#838B8B"),
+  position = position_dodge(0.8)
+) + 
+  labs(x = "Distance from a tree trunk (m)", y = "O Horizon Depth (cm)")
+
+p11
+
+p12 <- ggbarplot(
+  datavis, x = "Distance", y = "Moisture_vv", 
+  add = c("mean_se", "jitter"), 
+  add.params = list(shape = "Genus"),
+  fill= "Genus", palette = c(
+    "Total" = "#8B4513",
+    "Alnus" = "#FF7F50", 
+    "Betula" = "#A9A9A9", 
+    "Sorbus" = "#66CDAA"),
+  position = position_dodge(0.8)
+) + 
+  labs(x = "Distance from a tree trunk (m)", y = "Soil moisture (%, v/v)")
+
+p12
+
+datavis$Distance <- as.factor(datavis$Distance)
+
+ggplot() +
+  # 1. Bars for species (standard dodge)
+  stat_summary(
+    data = filter(datavis, Genus != "Total"),
+    aes(x = Distance, y = Depth_cm, fill = Genus),
+    fun = mean,
+    geom = "bar",
+    position = position_dodge(width = 0.8),
+    width = 0.6
+  ) +
+  # 2. Error bars for species
+  stat_summary(
+    data = filter(datavis, Genus != "Total"),
+    aes(x = Distance, y = Depth_cm, group = Genus),
+    fun.data = mean_se,
+    geom = "errorbar",
+    position = position_dodge(width = 0.8),
+    width = 0.2
+  ) +
+  # 3. Jittered raw points for species
+  geom_jitter(
+    data = filter(datavis, Genus != "Total"),
+    aes(x = Distance, y = Depth_cm, shape = Genus, fill = Genus),
+    position = position_jitterdodge(jitter.width = 0.2, dodge.width = 0.8),
+    size = 1.6,
+    alpha = 0.8
+  ) +
+  # 4. Total bar (thicker and nudged left)
+  stat_summary(
+    data = filter(datavis, Genus == "Total"),
+    aes(x = Distance, y = Depth_cm, fill = Genus),
+    fun = mean,
+    geom = "bar",
+    position = position_nudge(x = -0.35),
+    width = 0.3,
+    alpha = 1
+  ) +
+  # 5. Error bars for Total
+  stat_summary(
+    data = filter(datavis, Genus == "Total"),
+    aes(x = Distance, y = Depth_cm),
+    fun.data = mean_se,
+    geom = "errorbar",
+    width = 0.2,
+    position = position_nudge(x = -0.35)
+  ) +
+  # 6. Scales and styling
+  scale_fill_manual(values = c(
+    "Total" = "#8B4513",
+    "Alnus" = "#E0EEEE", 
+    "Betula" = "#C1CDCD", 
+    "Sorbus" = "#838B8B"
+  )) +
+  labs(
+    x = "Distance from a tree trunk (m)",
+    y = "O Horizon Depth (cm)"
+  ) +
+  theme.LPI() +
+  theme(
+    legend.position = "right"
+  )
+
+
+
+# 8. Reporting -----
 ### Colour scheme: Sorbus should be red, betula to be silver, and alnus to be green.
 ### If you can, bring the total species at the beginning. 
 ### The se and means to be calculated.
@@ -391,5 +505,3 @@ summary(mod)
 ### alder hypotheses, and talk through how soil moisture also might be 
 ### related to this. Although small sample size means that there is no
 ### guaranteed conclusion that we can draw from this. 
-
-# 8. Reporting 
