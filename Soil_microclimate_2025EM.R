@@ -45,7 +45,7 @@ theme.clean <- function(){
 }
 
 # Set the WD ----
-setwd("/Users/Owner/Library/CloudStorage/OneDrive-UniversityofEdinburgh/#00_EM/Project_Soil Microclimate")
+setwd("/Users/Owner/Library/CloudStorage/OneDrive-UniversityofEdinburgh/#00_EM/Project_Soil Microclimate/EM_SoilMicroclimate")
 
 # Import and Clean data ----
 soil <- read.csv("RAW_ALL_soil_microclimate.csv")
@@ -113,6 +113,7 @@ summary(soil_all)
 soil_all <- na.omit(soil_all)
 write.csv(soil_all, "soil_all.csv")
 
+soil_all <- read.csv("soil_all.csv")
 # Linear model and ANOVA Depth vs. Distance----
 depth_lm = lm(Depth_cm ~ Distance, data = soil_all)
 depth_anov = aov(depth_lm, data = soil_all)
