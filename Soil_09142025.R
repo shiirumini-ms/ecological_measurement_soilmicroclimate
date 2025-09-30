@@ -29,7 +29,7 @@ theme.LPI <- function(){
 
 
 # Set the WD ----
-setwd("/Users/Owner/Library/CloudStorage/OneDrive-UniversityofEdinburgh/#00_EM/Project_Soil Microclimate")
+setwd("/Users/Owner/Library/CloudStorage/OneDrive-UniversityofEdinburgh/#00_EM/Project_Soil Microclimate/EM_SoilMicroclimate")
 
 # Import data ----
 soil_all <- read.csv("soil_all.csv")
@@ -301,8 +301,8 @@ p6 <- ggscatter(difference, x = "soil_0.5.DBH_cm", y = "Dif", color = "soil_0.5.
 p6
 
 ### Difference 
-# 7. Species-specific: A) Barplot B) ANOVA (two-way) ----
-### Alder, Birch, and Rowan. 
+# 7. Species-specific: A) Barplot  ----
+### A) Barplot for Alder, Birch, and Rowan. 
 soil_all_nonpine <- soil_all %>%
   filter(Genus != "Pinus")
 
@@ -334,6 +334,56 @@ p10 <- ggbarplot(
   labs(x = "Distance from a tree trunk (m)", y = "Soil moisture (%, v/v)")
 
 p10
+
+# 7. Species-specific: B) ANOVA - all one way. ----
+## 7-1. Depth --------
+#### Subsetting data for One-way ANOVA 
+View(soil_all_nonpine)
+nrow(soil_all_nonpine[soil_all_nonpine$Genus == "Alnus", ]) # n = 4 
+nrow(soil_all_nonpine[soil_all_nonpine$Genus == "Betula", ]) # n = 17 
+nrow(soil_all_nonpine[soil_all_nonpine$Genus == "Sorbus", ]) # n = 3
+
+Alnus <- subset(soil_all_nonpine,Genus == "Alnus")
+Betula <- subset(soil_all_nonpine, Genus == "Betula")
+Sorbus <- subset(soil_all_nonpine, Genus == "Sorbus")
+
+alnus_mod <- aov(Depth_cm ~ Distance, data = Alnus)
+summary(alnus_mod)
+# p = 0.01, df = 6. Significant difference. 
+betula_mod <- aov(Depth_cm ~ Distance, data = Betula)
+summary(betula_mod)
+# p = 0.29, df = 32, not significant. 
+sorbus_mod <- aov(Depth_cm ~ Distance, data = Sorbus)
+summary(sorbus_mod)
+# p = 0.58, df = 4, not significant. 
+
+#### Two-way ANOVA 
+mod <- aov(Depth_cm ~ Distance * Genus, data = soil_all_nonpine)
+Anova(mod, type = 3)
+summary(mod)
+# p = 0.20, Species is not a significant factor for determining difference in
+# organic layer depth, but this lacks sample size and violates balanced sample size. 
+# therefore, not valid. 
+
+## 7-2. Soil moisture -------
+alnus_mod <- aov(Moisture_vv ~ Distance, data = Alnus)
+summary(alnus_mod)
+# p = 0.08, df = 6. not significant. 
+betula_mod <- aov(Moisture_vv ~ Distance, data = Betula)
+summary(betula_mod)
+# p = 0.14, df = 32, not significant. 
+sorbus_mod <- aov(Moisture_vv ~ Distance, data = Sorbus)
+summary(sorbus_mod)
+# p = 0.38, df = 4, not significant. 
+
+#### Two-way ANOVA 
+mod <- aov(Moisture_vv ~ Distance * Genus, data = soil_all_nonpine)
+Anova(mod, type = 3)
+summary(mod)
+# p = 0.44, Species is not a significant factor for determining difference in
+# organic layer depth, but this lacks sample size and violates balanced sample size. 
+# therefore, not valid.
+
 ### Bring betula at the top so I can talk about betula first. 
 ### Colour scheme: Sorbus should be red, betula to be silver, and alnus to be green.
 ### If you can, bring the total species at the beginning. 

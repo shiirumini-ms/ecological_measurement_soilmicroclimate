@@ -10,7 +10,7 @@ library(readr) #manipulation
 library(ggpubr)
 install.packages("colourpicker")
 library(car)
-# Definicar# Defining functions ----
+# Defining functions ----
 theme.LPI <- function(){
   theme_bw()+
     theme(axis.text.x=element_text(size=12, angle=0, vjust=1, hjust=1, color="black"), 
@@ -36,8 +36,8 @@ setwd("/Users/Owner/Library/CloudStorage/OneDrive-UniversityofEdinburgh/#00_EM/P
 soil_all <- read.csv("soil_all.csv")
 View(soil_all)
 
-# Management-specific ----
-## A) Visualisation
+# Management-specific
+## A) Visualisation ----
 ### Classifying tree ID based on management 
 soil_all<- soil_all %>% 
   mutate(soil_all, Management = case_when(
@@ -144,7 +144,7 @@ se_moisutre_nomound_7.0 <- sd_moisutre_nomound_7.0/sqrt(12)
 print(se_moisutre_nomound_7.0)
 # 5.60 % for 7.0 m
 
-## B) Two-way ANOVA
+## B) Two-way ANOVA ----
 #### Depth vs. management & tree trunk distance 
 mod <- aov(Depth_cm ~ Distance * Management, data = soil_all)
 Anova(mod, type = 3)
