@@ -83,7 +83,7 @@ p9
 
 combined_plot <- ggarrange(
   p8, p9,
-  labels = c("a)", "b)"),
+  labels = c("a", "b"),
   ncol = 2, nrow = 1,
   common.legend = FALSE
 )
