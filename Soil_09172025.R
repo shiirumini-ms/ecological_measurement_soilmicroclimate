@@ -10,6 +10,7 @@ library(readr) #manipulation
 library(ggpubr)
 install.packages("colourpicker")
 library(car)
+
 # Defining functions ----
 theme.LPI <- function(){
   theme_bw()+
@@ -27,7 +28,6 @@ theme.LPI <- function(){
           legend.title = element_blank(), 
           legend.position=c(0.9,0.9))
 }
-
 
 # Set the WD ----
 setwd("/Users/Owner/Library/CloudStorage/OneDrive-UniversityofEdinburgh/#00_EM/Project_Soil Microclimate/EM_SoilMicroclimate")

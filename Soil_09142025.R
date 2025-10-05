@@ -60,7 +60,42 @@ soil_all <- soil_all %>%
          "Notes","x","y","running_order","Genus")
 View(soil_all)
 
-# 2. ALL TREES (skipped, refer to the Soil_microclimate_2025EM.R) ----
+# 2. ALL TREES (for pinus included version, see "Soil_microclimate_2025EM.R") ----
+## ANOVA 
+soil_all_nonpine <- soil_all %>%
+  filter(Genus != "Pinus")
+
+## Linear model and ANOVA Depth vs. Distance----
+depth_lm = lm(Depth_cm ~ Distance, data = soil_all_nonpine)
+depth_anov = aov(depth_lm, data = soil_all_nonpine)
+summary(depth_anov)
+
+# calculating mean.
+str(soil_all)
+is.factor(soil_all$Distance)
+levels(soil_all$Distance)
+
+tapply(soil_all_nonpine$Depth_cm, soil_all_nonpine$Distance, mean, na.rm=TRUE)
+
+plot(depth_lm) 
+# Residuals vs. fitted: linearity met. 
+# Q-Q plot generally follows the same line, residuals normally distributed. 
+# Residuals variances are equal. 
+# No significant outliers outside the Cook's distance. 
+
+## Linear model and ANOVA Moisture vs. Distance ----
+moisture_lm <- lm(Moisture_vv ~ Distance, data = soil_all_nonpine)
+moisture_anov <- aov(moisture_lm)
+summary(moisture_anov)
+
+# calculate means 
+tapply(soil_all_nonpine$Moisture_vv, soil_all_nonpine$Distance, mean, na.rm=TRUE)
+
+plot(moisture_lm)
+# Linearity met.
+# Q-Q plot generally follows the same line. 
+# Residual variances are generally equal.
+# No significant outliers outside the Cook's distance. 
 
 # 3. Only silver birch : A) Barplot B) ANOVA ----
 ### Linear model and ANOVA Depth vs. Distance
@@ -388,7 +423,6 @@ summary(mod)
 # therefore, not valid.
 
 
-
 # 8. Species-specific AND Total species: Barplot ----
 ## combining rows with Genus = Total
 datavis <- soil_all_nonpine
@@ -439,6 +473,5 @@ datavis$Distance <- as.factor(datavis$Distance)
 
 dev.off()
 
-# 8. Reporting -----
-### The se and means to be calculated.
-### What does this imply? 
+# 9. Reporting -----
+
