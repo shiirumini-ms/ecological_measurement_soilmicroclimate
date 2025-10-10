@@ -34,7 +34,9 @@ This dataset comprises of
 
 ### Data Contact
 
-Mako Shibata ([s2471259\@ed.ac.uk](mailto:s2471259@ed.ac.uk){.email}) for inquires regarding this project. Expiration Date - 2028/12/31 - Data can be archived
+Mako Shibata ([s2471259\@ed.ac.uk](mailto:s2471259@ed.ac.uk){.email}) for inquires regarding this project.
+
+Expiration Date - 2028/12/31 - Data can be archived
 
 ### Publications
 
