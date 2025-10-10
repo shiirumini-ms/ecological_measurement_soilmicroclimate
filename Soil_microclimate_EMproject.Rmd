@@ -256,6 +256,7 @@ depth_anov = aov(depth_lm, data = soil_all_nonpine)
 
 table_obj <- tidy(depth_anov)
 pander(depth_anov, digits = 3)
+# p = 0.03, significant difference. 
 
 ## calculating mean
 tapply(soil_all_nonpine$Depth_cm, soil_all_nonpine$Distance, mean, na.rm=TRUE)
@@ -273,6 +274,7 @@ moisture_anov <- aov(moisture_lm)
 
 table_obj <- tidy(moisture_anov)
 pander(moisture_anov, digits = 3)
+# p = 0.02, significant difference. 
 
 ## Anscombe's Quartet 
 plot(moisture_lm)
@@ -374,7 +376,7 @@ pander(mound_aov, digits = 3)
 no_mound_aov <- aov(Depth_cm ~ Distance, data = no_mound)
 table_obj <- tidy(no_mound_aov)
 pander(no_mound_aov, digits = 3)
-# p = 0.05 for mound, p = 0.34 for no-mound.
+# p = 0.03 for mound, p = 0.34 for no-mound.
 # df = 24, and df = 24, respectively. 
 
 ## Moisture vs. Distance ----
@@ -386,7 +388,7 @@ pander(mound_aov, digits = 3)
 no_mound_aov <- aov(Moisture_vv ~ Distance, data = no_mound)
 table_obj <- tidy(no_mound_aov)
 pander(no_mound_aov, digits = 3)
-# p = 0.22 for mound, p = 0.04 for no-mound. 
+# p = 0.18 for mound, p = 0.04 for no-mound. 
 # df = 24 and df = 24 respectively.
 
 ```
