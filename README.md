@@ -7,6 +7,7 @@ Dataset comprises of
 - Cleaned data file (.csv/.xlsx)
 - R trial scripts
 - R Markdown file where cleaning and analyses are all done in one go
+- Plotted figures (Fig_title.png/jpg)
 - PDF file with rundown of analytical procedure (and associated .tex files)
 
   
