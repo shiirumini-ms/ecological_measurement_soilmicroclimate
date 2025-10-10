@@ -1,10 +1,10 @@
 ---
-title: 'Appendix. A: Summary of R code used in statistical analyses and visualisation.
+title: 'Appendix. C: Summary of R code used in statistical analyses and visualisation.
   R version 4.5.1.'
 author: "Mako Shibata"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 # Preamble
