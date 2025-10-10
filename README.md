@@ -7,7 +7,7 @@ Dataset comprises of
 - Cleaned data file (.csv/.xlsx)
 - R trial scripts
 - R Markdown file where cleaning and analyses are all done in one go
-- PDF file with rundown of analytical procedure (and associated .txt files)
+- PDF file with rundown of analytical procedure (and associated .tex files)
 
   
 ### Data Contact
